@@ -8,7 +8,7 @@ The code for each algorithm is contianed in the aptly named files
 
 Running an algorithm (DecisionTree.py, Boosting.py, kNN.py, ANN.py, SVM.py) file will generate the associated
 charts which will be saved in the `Figs` folder. In addition, running an algorithm file will generate 2 
-pickle files which contain the cross validation results from running Grid Search. The `.pickle` files are 
+pickle files which contain the cross validation results from running Grid Search or Randomized Search. The `.pickle` files are 
 stored in the `Pickle` folder.
 
 Each algorithm file utilizes the `util.py` file to gather and preprocess the data. In order for the data to be
