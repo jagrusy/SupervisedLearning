@@ -15,7 +15,7 @@ Each algorithm file utilizes the `util.py` file to gather and preprocess the dat
 processed correctly it should be stored in the `Data` folder.
 
 After running all the algorithms, you can run the `GraphResults.py` file which takes in all the pickle files 
-and generates a chart comparing the runtimes of the different algorithms. If you want to look at the pickle
+and prints the training scores, testing scores, and accuracy of different algorithms. If you want to look at the pickle
 files for a particular algorithm you'll need to specify which algorithms to look at in the `GraphResults.py`
 file on line 5.
 
