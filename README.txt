@@ -1,5 +1,7 @@
 Running the Algorithms
 
+All of the algorithms, related charts, and cross validation result data can be found at: https://github.com/jagrusy/SupervisedLearning
+
 All of the project requirements are in the `requirements.txt` file
 
 `pip install -r requirements.txt`

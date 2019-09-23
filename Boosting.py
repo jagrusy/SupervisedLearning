@@ -17,13 +17,13 @@ from util import getCreditCardData, getWineData, plot_learning_curve, save_cv
 def Boosting(X_train, X_test, y_train, y_test, data_name, lc_y_min=0.4, lc_y_max=1.01):
     # Train Model and Predict
     # dt1 = DecisionTreeClassifier(criterion="gini", max_depth=1)
-    dt2 = DecisionTreeClassifier(criterion="gini", max_depth=2)
-    # dt3 = DecisionTreeClassifier(criterion="gini", max_depth=3)
+    # dt2 = DecisionTreeClassifier(criterion="gini", max_depth=2)
+    dt3 = DecisionTreeClassifier(criterion="gini", max_depth=3)
     # dt4 = DecisionTreeClassifier(criterion="gini", max_depth=4)
     # dt5 = DecisionTreeClassifier(criterion="gini", max_depth=5)
-    param_grid = {"base_estimator": [dt2],
-                "learning_rate" : np.linspace(0.01, 1.0, 20),
-                "n_estimators": range(1, 200, 5)
+    param_grid = {"base_estimator": [dt3],
+                "learning_rate" : np.linspace(0.5, 10.0, 20),
+                "n_estimators": range(1, 200, 20)
                 }
 
     clf = AdaBoostClassifier()

@@ -61,7 +61,7 @@ def kNN(X_train, X_test, y_train, y_test, data_name):
 
     title = 'Learning Curves (kNN Classifier) - {}'.format(data_name)
 
-    estimator = KNeighborsClassifier(n_neighbors=mean_acc[1:].argmax()+1)
+    estimator = KNeighborsClassifier(n_neighbors=mean_acc.argmax()+1)
     print('plotting learning curve for {}'.format(estimator))
     plot_learning_curve(estimator, title, X, y, ylim=(0.4, 1.01), cv=cv, n_jobs=4)
     plt.savefig('Figs/KNN-learningcurve-{}'.format(data_name))

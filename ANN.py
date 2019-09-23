@@ -15,18 +15,7 @@ from util import getCreditCardData, getWineData, plot_learning_curve, save_cv
 def ANN(X_train, X_test, y_train, y_test, data_name, lc_y_min=0.4, lc_y_max=1.01):
     # Train Model and Predict
     unique_vals = len(np.unique(y_test))
-    # param_grid = {"hidden_layer_sizes" : [(unique_vals,), (unique_vals,unique_vals), (unique_vals,unique_vals,unique_vals), (100,)]}
 
-    # clf = MLPClassifier(hidden_layer_sizes=(unique_vals,unique_vals))
-
-    # # run grid search on dataset 1
-    # grid_search = GridSearchCV(clf, param_grid=param_grid, cv=5, verbose=1, n_jobs=-1)
-    # grid_search.fit(X_train, y_train)
-    # print(grid_search.best_params_)
-    # print(grid_search.best_score_)
-    # best_hidden_layer_params = grid_search.best_params_
-
-    # clf = MLPClassifier(**best_hidden_layer_params)
     clf = MLPClassifier(solver='sgd')
 
 
